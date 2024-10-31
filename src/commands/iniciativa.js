@@ -9,7 +9,7 @@ module.exports = {
             input.setName("input")
             .setDescription("adicionar ordem")),
     async execute(interaction)
-    {
+    { 
         const input = interaction.options.getString("input", true);
         var order = [];
         try {
