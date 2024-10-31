@@ -8,7 +8,11 @@ const {Client, GatewayIntentBits, Collection} = require("discord.js");
 const { REST, Routes } = require("discord.js");
 const client = new Client({
     intents: [
-        GatewayIntentBits.Guilds
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.MessageContent,
+        GatewayIntentBits.GuildMembers,
+        GatewayIntentBits.GuildVoiceStates,
     ],
 });
 
@@ -33,8 +37,8 @@ for(const file of commandFiles)
 const eventsPath = path.join(__dirname, 'events');
 const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith(".js"));
 for (file of eventFiles)
-{
-    const filePath = path.join(eventsPath, file);
+    {
+        const filePath = path.join(eventsPath, file);
     const event = require(filePath);
     if(event.once)
         client.once(event.name, (...args) => event.execute(...args))
