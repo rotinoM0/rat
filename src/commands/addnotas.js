@@ -1,7 +1,9 @@
 const { SlashCommandBuilder } = require("discord.js");
 const fs = require("node:fs");
 
-let conteudo = {};
+let conteudo = {
+    rotinoM: [{titulo: "texto"},]
+};
 
 module.exports = {
     data: new SlashCommandBuilder()
