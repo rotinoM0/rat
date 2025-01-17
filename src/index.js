@@ -54,7 +54,7 @@ const rest = new REST({ version: '10' }).setToken(token);
         await rest.put(Routes.applicationCommands("894965508166795304"), {body: commands});
         console.log("sucesso");
     } catch (error) {
-        console.error(error);
+        console.error("erro aqui ó: " + error);
     }
 })();
 

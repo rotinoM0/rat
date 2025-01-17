@@ -16,8 +16,7 @@ module.exports = {
         )
         .addStringOption(texto => 
             texto.setName("texto")
-            .setDescription("texto para anotar"))
-            .setRequired(true),
+            .setDescription("texto para anotar")),
     async execute(interaction)
     {
         const userName = interaction.user.displayName;

@@ -1,5 +1,4 @@
 const { Events } = require("discord.js");
-const { once } = require("nodemon");
 
 module.exports = {
     name: Events.ClientReady,
