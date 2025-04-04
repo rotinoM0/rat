@@ -14,7 +14,8 @@ module.exports = {
             await interaction.reply("conectado no canal de voz **" + interaction.member.voice.channel.name + "**");
             const player = createAudioPlayer()
             
-            let resource = createAudioResource("/home/user/rat/src/assets/irra.mp3");
+            let resource = createAudioResource(`${__dirname}/../assets/irra.mp3`);
+            // console.log(`diretório: ${process.cwd}`)
             //player.play(resource);
             await setTimeout(() => player.play(resource), 2000);
 

@@ -7,7 +7,8 @@ module.exports = {
         .setDescription("cria uma ordem de iniciativa a partir de entradas separadas por vírgula (,). Exemplo: P1, P2, NPC1")
         .addStringOption(input => 
             input.setName("input")
-            .setDescription("adicionar ordem")),
+            .setDescription("adicionar ordem")
+            .setRequired(true)),
     async execute(interaction)
     { 
         const input = interaction.options.getString("input", true);

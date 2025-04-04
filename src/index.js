@@ -1,8 +1,8 @@
 //https://discord.com/oauth2/authorize?client_id=894965508166795304&permissions=8&scope=bot+applications.commands
 
+const dotenv = require("dotenv").config()
 const fs = require("node:fs");
 const path = require("node:path");
-const {token} = require("./config.json");
 
 const {Client, GatewayIntentBits, Collection} = require("discord.js");
 const { REST, Routes } = require("discord.js");
@@ -46,7 +46,7 @@ for (file of eventFiles)
         client.on(event.name, (...args) => event.execute(...args));
 }
 
-const rest = new REST({ version: '10' }).setToken(token);
+const rest = new REST({ version: '10' }).setToken(process.env.token);
 
 (async () => {
     try {
@@ -58,4 +58,4 @@ const rest = new REST({ version: '10' }).setToken(token);
     }
 })();
 
-client.login(token);
+client.login(process.env.token);
