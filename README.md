@@ -17,3 +17,5 @@ fluxo de um jogo de RPG de mesa
 
 RAT é livre para contribuição, apesar de não ser o foco principal do projeto.
 Trata-se de um simples projeto com foco em estudo desenvolvido inicialmente por uma pessoa.
+
+RAT requer discord.js instalado para funcionar.
