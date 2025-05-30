@@ -1,4 +1,4 @@
-.env,
-node_modules,
-discloud,
+.env
+node_modules
+discloud*
 discloud.config
