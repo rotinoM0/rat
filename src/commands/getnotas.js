@@ -11,6 +11,6 @@ module.exports = {
         
         const conteudo = await JSON.parse(file);
         console.log(conteudo);
-        await interaction.reply("não"); 
+        await interaction.reply("WIP Comando indisponível"); 
     }
 }

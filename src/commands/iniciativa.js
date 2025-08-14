@@ -1,5 +1,7 @@
-const {SlashCommandBuilder, EmbedBuilder, Colors} = require("discord.js");
-const { execute } = require("./roll");
+const {SlashCommandBuilder, EmbedBuilder, Colors, time} = require("discord.js");
+// const { execute } = require("./roll");
+
+const nums = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣'];
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -15,9 +17,11 @@ module.exports = {
         var order = [];
         try {
             order = input.split(',');
-            await interaction.reply({embeds: [embedOrder(order)]});
+            await interaction.reply("**Gerando Iniciativa**");
+            await message(interaction, order);
+
         } catch (error) {
-            await interaction.reply("ocorreu um erro...");
+            await interaction.followUp("ocorreu um erro...");
             console.error(error);
             return;
         }
@@ -31,8 +35,53 @@ function embedOrder(order)
     .setColor(Colors.Blue)
     .setDescription("ordem da iniciativa")
     .setTimestamp()
-    order.forEach(field => {
-        embed.addFields({name: field.toString(), value: " ", inline: true});
+    order.forEach((field, idx) => {
+        embed.addFields({name: (idx + 1).toString(), value: field.toString(), inline: false});
     });
     return embed;
+}
+
+async function collectReactions(interaction, msg, order)
+{
+    try {
+        const filter = (reaction, user) => {
+            return !user.bot && nums.includes(reaction.emoji.name);
+        };
+    
+        const collected = await msg.awaitReactions({ filter, max: 1, time: (3600*1000), errors: ["time"] });
+    
+        const reacted = collected.first();
+        if (reacted && nums.includes(reacted.emoji.name)) {
+            order.splice(nums.indexOf(reacted.emoji.name), 1);
+            // msg.edit({embeds: [embedOrder(order)], fetchReply: true});
+            await message(interaction, order);
+            
+        }
+        else {
+            console.log();
+            msg.edit("asda");
+            return;
+        }
+    } catch (error){
+        console.error(error);
+        
+        msg = await msg.edit("**⚠️ Time Out ⚠️**");
+        return;
+    }
+}
+
+
+async function message(interaction, order) 
+{
+    const msg = await interaction.followUp({embeds: [embedOrder(order)], fetchReply: true});
+    await reactions(interaction, msg, order);
+}
+
+async function reactions(interaction, msg, order) 
+{
+    await order.forEach((i, idx) => {
+        msg.react(nums[idx]);
+    });
+
+    await collectReactions(interaction, msg, order);
 }

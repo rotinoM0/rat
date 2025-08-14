@@ -6,7 +6,11 @@ online, ainda que seja possível utilizá-lo publicamente.
 
 RAT é construído em JavaScript utilizando a framework discord.js, com objetivo de auxiliar
 em jogos de RPG de mesa online, apresentando atualmente conceitos e comandos simples para o
-fluxo de um jogo de RPG de mesa
+fluxo de um jogo de RPG de mesa.
+
+### Adicione RAT a um servidor no Discord
+
+https://discord.com/oauth2/authorize?client_id=894965508166795304&permissions=8&integration_type=0&scope=bot
 
 ### entre os comandos listados atualmente, destacam-se:
 <ul>

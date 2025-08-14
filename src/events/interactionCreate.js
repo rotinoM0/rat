@@ -16,9 +16,9 @@ module.exports = {
         } catch (error) {
             console.error(error);
             if (interaction.replied || interaction.deferred)
-                await interaction.followUp({content: "erro executando comando"});
+                await interaction.followUp({content: "erro executando comando."});
             else{
-                await interaction.followUp("erro executando comando");
+                await interaction.followUp("erro executando comando...");
             }
         }
     },
