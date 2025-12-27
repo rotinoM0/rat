@@ -51,6 +51,8 @@ coverage
 .rts2_cache_umd/
 .node_repl_history
 *.tgz
+.vscode
+.directory
 .yarn-integrity
 .lock-wscript
 
