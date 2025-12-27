@@ -4,7 +4,7 @@
 
 **Um bot Discord para auxiliar em jogos de RPG de mesa online**
 
-[Adicionar ao Discord](https://discord.com/oauth2/authorize?client_id=894965508166795304&permissions=8&integration_type=0&scope=bot) • [Reportar Bug](https://github.com/seu-usuario/rat/issues) • [Solicitar Feature](https://github.com/seu-usuario/rat/issues)
+[Adicionar ao Discord](https://discord.com/oauth2/authorize?client_id=894965508166795304&permissions=8&integration_type=0&scope=bot) • [Reportar Bug](https://github.com/rotinom0/rat/issues) • [Solicitar Feature](https://github.com/rotinom0/rat/issues)
 
 </div>
 
