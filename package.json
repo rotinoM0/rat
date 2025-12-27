@@ -2,15 +2,15 @@
   "name": "rat",
   "version": "1.0.0",
   "description": ":D",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "commonjs",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch src/index.js",
-    "build": ""
+    "dev": "node --watch src/index.js"
   },
-  "author": "´-´",
-  "license": "ISC",
+  "author": "´Matheus Fernandes´",
+  "license": "MIT",
   "dependencies": {
     "@discordjs/opus": "^0.10.0",
     "@discordjs/voice": "^0.17.0",
