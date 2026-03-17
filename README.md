@@ -1,14 +1,15 @@
-# 🎲 RAT - RPG Assistant Tool
+<div align="center">
+  <img align="center" src="https://github.com/user-attachments/assets/96bf502f-4fd4-4003-b0d6-43151c9f8b05" alt="rat logo">
+</div>
+
+---
 
 <div align="center">
-
-**Um bot Discord para auxiliar em jogos de RPG de mesa online**
-
+  
 [Adicionar ao Discord](https://discord.com/oauth2/authorize?client_id=894965508166795304&permissions=8&integration_type=0&scope=bot) • [Reportar Bug](https://github.com/rotinom0/rat/issues) • [Solicitar Feature](https://github.com/rotinom0/rat/issues)
 
 </div>
 
----
 
 ## 📖 Sobre o Projeto
 
@@ -36,7 +37,7 @@ RAT é um bot Discord desenvolvido para facilitar sessões de RPG de mesa online
 
 | Comando | Descrição | Exemplo |
 |---------|-----------|---------|
-| `/roll [dados]` | Rola dados no formato NdM | `/roll 2d20` |
+| `/roll [dados]` | Rola dados no formato NdM | `/roll dados: 2` |
 | `/iniciativa` | Cria uma lista de iniciativa | `/iniciativa` |
 | `/help` | Mostra todos os comandos disponíveis | `/help` |
 
