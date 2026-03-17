@@ -11,11 +11,11 @@
 </div>
 
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 
 RAT é um bot Discord desenvolvido para facilitar sessões de RPG de mesa online. Criado como projeto pessoal para estudos de lógica e arquitetura de software, o RAT oferece comandos simples e intuitivos para tornar suas aventuras mais dinâmicas e organizadas.
 
-### ✨ Funcionalidades
+### Funcionalidades
 
 - 🎲 **Rolagem de Dados**: Role qualquer quantidade de dados com diferentes faces
   - Exemplo: `/roll dados:2` rola 2 dados de 20 faces ou `roll faces:6` rola 1 dado de 6 faces
@@ -24,7 +24,7 @@ RAT é um bot Discord desenvolvido para facilitar sessões de RPG de mesa online
 
 ---
 
-## 🚀 Como Usar
+## Como Usar
 
 ### Adicionar o Bot ao seu Servidor
 
@@ -43,7 +43,7 @@ RAT é um bot Discord desenvolvido para facilitar sessões de RPG de mesa online
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **[Node.js](https://nodejs.org/)** - Runtime JavaScript
 - **[Discord.js](https://discord.js.org/)** - Framework para bots Discord
@@ -51,7 +51,7 @@ RAT é um bot Discord desenvolvido para facilitar sessões de RPG de mesa online
 
 ---
 
-## 💻 Instalação para Desenvolvimento
+## Instalação para Desenvolvimento
 
 Quer rodar o bot localmente ou contribuir? Siga os passos abaixo:
 
@@ -86,7 +86,7 @@ token=seu_token_de_developer_aqui
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 rat/
@@ -102,7 +102,7 @@ rat/
 
 ---
 
-## 🤝 Como Contribuir
+## Como Contribuir
 
 Contribuições são muito bem-vindas! Este é um projeto de estudos e toda ajuda é apreciada.
 
@@ -114,13 +114,13 @@ Contribuições são muito bem-vindas! Este é um projeto de estudos e toda ajud
 
 ---
 
-## 📝 Licença
+## Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-## 👤 Autor
+## Autor
 
 Feito por amor como projeto de estudos
 
@@ -130,7 +130,7 @@ Feito por amor como projeto de estudos
 
 ---
 
-## 🙏 Agradecimentos
+## Agradecimentos
 
 - Comunidade Discord.js pela excelente documentação
 - Todos que testaram e deram feedback no bot
